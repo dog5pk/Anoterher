@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Anotether network security configuration.
+  Enforces HTTPS-only connections. No cleartext traffic permitted ever.
+  This is a hard requirement for a privacy messenger.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust system CAs only — no user-installed CAs -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

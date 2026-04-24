@@ -1,0 +1,18 @@
+{
+  "name": "anotether-backend-worker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:integration": "vitest run --config vitest.integration.config.ts"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "typescript": "^5.4.2",
+    "vitest": "^1.3.1",
+    "wrangler": "^3.34.2"
+  }
+}
